@@ -128,7 +128,7 @@
         <table class="table table_border_only_header">
           <thead>
           <tr>
-            <th scope="col">A</th>
+            <th scope="col">B</th>
           </tr>
           </thead>
           <tbody>
@@ -169,7 +169,7 @@
         <table class="table table_border_only_header">
           <thead>
           <tr>
-            <th scope="col">A</th>
+            <th scope="col">C</th>
           </tr>
           </thead>
           <tbody>
