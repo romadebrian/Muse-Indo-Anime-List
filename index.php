@@ -1,6 +1,11 @@
 <html>
 <head>
-    <title>List Anime Muse Indonesia</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Youtube Muse Indonesia Anime List">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	
+    <title>List Anime Muse Indonesia Youtube</title>
 	
 	<link href="bootstrap\css\bootstrap.min.css" rel="stylesheet">
 	
