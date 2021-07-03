@@ -1,0 +1,18 @@
+body 
+{
+    background-image: url("resource/BG.png");
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-size: auto;
+}
+
+#footer {
+    background-image: url("resource/footer.png");
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+    background-size: cover;
+    height: 160px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
