@@ -2,14 +2,14 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Youtube Muse Indonesia Anime List">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="description" content="List Anime In Youtube Muse Indonesia ">
+    <meta name="author" content="Roma Debrian">
 	
     <title>List Anime Muse Indonesia Youtube</title>
 	
 	<link href="bootstrap\css\bootstrap.min.css" rel="stylesheet">
 	
-	<link rel="icon" type="image/png" href="resource/favicon.png" />
+	<link rel="icon" type="image/png" href="resource\favicon.png" />
 	
     <!-- Custom styles for this template -->
     <link href="headers.css" rel="stylesheet">
@@ -25,27 +25,15 @@
 
 <body>
 
-<main>
 <div class="container">
-	<nav class="py-2 bg-light border-bottom">
-    <div class="container d-flex flex-wrap">
-      <ul class="nav me-auto">
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Anime List </a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Youtube Channel</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Facebook</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
-      </ul>
-      <ul class="nav">
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Login</a></li>
-      </ul>
-    </div>
-  </nav>
+
+	<?php include ("../headers.php");?>
+
   <header class="py-3 mb-4 border-bottom">
     <div class="container d-flex flex-wrap justify-content-center">
       <a href="/index.php" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
         <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
-		<img src="resource/Logo.png" alt="Logo" width="35" height="35" class="bi me-2">
+		<img src="../resource/Logo.png" alt="Logo" width="35" height="35" class="bi me-2">
         <span class="fs-4">ANIME LIST</span>
       </a>
       <form class="col-12 col-lg-auto mb-3 mb-lg-0">
@@ -55,7 +43,7 @@
   </header>
 
 	<div class="bd-example">
-        <nav aria-label="Standard pagination example">
+        <nav aria-label="List Anime">
           <ul class="pagination">
             <li class="page-item"><a class="page-link" href="#List_Anime_A">A</a></li>
             <li class="page-item"><a class="page-link" href="#List_Anime_B">B</a></li>
@@ -209,9 +197,10 @@
         </table>
 	</div>
 	</section>
-
-</main>
-<div id="footer">
 </div>
 
+<footer id="footer" class="text-center">
+</footer>
+
+</body>
 </html>

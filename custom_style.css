@@ -1,4 +1,4 @@
-body 
+body
 {
     background-image: url("resource/BG.png");
     background-repeat: no-repeat;
@@ -12,7 +12,12 @@ body
 	background-repeat: no-repeat;
     background-size: cover;
     height: 160px;
-    margin-left: -10px;
-    margin-right: -10px;
 }
 
+.overflow {
+  white-space: nowrap; 
+  width: 150px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  direction: rtl;
+}
