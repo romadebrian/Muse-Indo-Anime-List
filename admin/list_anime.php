@@ -20,14 +20,19 @@
 	{
 		border: 0;
 	}
-	</style>
+	
+
+</style>
   </head>
 
 <body>
 
 <div class="container">
 
-	<?php include ("../headers.php");?>
+	<?php 
+	include ("../headers.php");
+	include ("form_input_anime.php");
+	?>
 
 	<header class="py-3 mb-4 border-bottom">
 		<div class="container d-flex flex-wrap justify-content-center">
@@ -40,15 +45,16 @@
 	
 	<div id="List_Anime">
 		<div class="container">
-		<a href="form_tambah_anime.php"> <button type="button" class="btn btn-primary"> Input Anime </button> </a>
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form_input_anime"> Input Anime </button>
+		<?php include ("form_input_anime.php"); ?>
 		<div>
 			<table class="table table-bordered">
 			<thead class="table-dark text-center">
 				<td><b> No </td>
 				<td><b> Nama Anime </td>
 				<td><b> Alternatif </td>
-				<td><b> Kategori </td>
-				<td><b> Tanggal </td>
+				<td width="80"><b> Kategori </td>
+				<td width="100"><b> Tanggal </td>
 				<td width="50"><b> Link </td>
 				<td colspan="2" ><b> Aksi </td>
 			</thead>
@@ -65,7 +71,7 @@
 				echo "<td> $data[Alternatif] </td>";
 				echo "<td class='align-middle text-center'> $data[Kategori] </td>";
 				echo "<td class='align-middle text-center' width='85'> $data[Tanggal] </td>";
-				echo "<td class='align-middle'> <p class='overflow'> $data[Link] </p></td>";
+				echo "<td class='align-middle'> <p class='overflow'><a href='$data[Link]'> $data[Link] </a></p></td>";
 				echo "<td width='50' class='align-middle text-center'><a href='murid_edit.php?kode=$data[No]'> <img src='../resource/Edit.png' alt='Edit' width='30' height='30'> </a></td>";
 				echo "<td width='50' class='align-middle text-center'><a href='Hapus_Murid.php?kode=$data[No]'> <img src='../resource/Delete.png' alt='Delete' width='30' height='30'> </a></td>
 			</TR>";
@@ -82,6 +88,9 @@
 
 <footer id="footer" class="text-center">
 </footer>
+
+<script src="..\bootstrap\js\bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
