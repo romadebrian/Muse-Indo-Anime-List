@@ -46,7 +46,7 @@
 	<div id="List_Anime">
 		<div class="container">
 		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form_input_anime"> Input Anime </button>
-		<?php include ("form_input_anime.php"); ?>
+		<?php include ("form_edit_anime.php"); ?>
 		<div>
 			<table class="table table-bordered">
 			<thead class="table-dark text-center">
@@ -72,7 +72,7 @@
 				echo "<td class='align-middle text-center'> $data[Kategori] </td>";
 				echo "<td class='align-middle text-center' width='85'> $data[Tanggal] </td>";
 				echo "<td class='align-middle'> <p class='overflow'><a href='$data[Link]'> $data[Link] </a></p></td>";
-				echo "<td width='50' class='align-middle text-center'><a href='murid_edit.php?kode=$data[No]'> <img src='../resource/Edit.png' alt='Edit' width='30' height='30'> </a></td>";
+				echo "<td width='50' class='align-middle text-center'><img src='../resource/Edit.png' alt='Edit' width='30' height='30' data-bs-toggle='modal' data-bs-target='#form_Edit_anime$data[No]'></td>";
 				echo "<td width='50' class='align-middle text-center'><a href='Hapus_Murid.php?kode=$data[No]'> <img src='../resource/Delete.png' alt='Delete' width='30' height='30'> </a></td>
 			</TR>";
 			}

@@ -1,14 +1,17 @@
-<div class="modal fade" id="form_input_anime" tabindex="-1" aria-labelledby="Form Input Anime" aria-hidden="true">
+<?php
+?>
+
+<div class="modal fade" id="Form_Edit_Anime1" tabindex="-1" aria-labelledby="Form Edit Anime" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="Form_Input_Anime">Form Input Anime</h5>
+        <h5 class="modal-title">Form Edit Anime</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-	  <form method="POST" id="contact-form" class="form-horizontal modal-content" action="proses_input_anime.php" onSubmit="alert( 'TERSIMPAN' );">
+	  <form method="POST" id="contact-form" class="form-horizontal modal-content" action="proses_input_anime.php" onSubmit="alert( 'PEMBARUAN BERHASIL' );">
 		<div class="modal-body">
 			<div class="form-group">
-				<input type="text" name="Form_Name" id="Form_Name" class="form-control wow fadeInUp" placeholder="Nama Anime" required/>
+				<input type="text" name="Form_Name" id="Form_Name" class="form-control wow fadeInUp" placeholder="Nama Anime" value="<?php echo $data['No']; ; ?>" required/>
 			</div>
 			<div class="form-group">
 				<input type="text" name="Form_Alternatif" id="Form_Alternatif" class="form-control wow fadeInUp" placeholder="Nama Alternatif"/>
@@ -22,7 +25,7 @@
 		</div>
 		<div class="modal-footer">
 			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">BATAL</button>
-			<button type="submit" class="btn btn-primary">SIMPAN</button>
+			<button type="submit" class="btn btn-primary">UPDATE</button>
 		</div>
 	  </form>
     </div>

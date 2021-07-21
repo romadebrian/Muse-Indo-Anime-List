@@ -1,0 +1,1 @@
+di list anime admin bikin record per page nya berdasarkan kategori aja
