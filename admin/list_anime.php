@@ -62,11 +62,10 @@
 		
 			<?php
 			include ('../koneksi.php');
-			$tampil="SELECT * FROM `list_anime` ";
-			$hasil=mysqli_query($koneksi, $tampil);
-			$Test = "1";
+			$sql 		= "SELECT * FROM list_anime ";
+			$execution	= mysqli_query($koneksi, $sql);
 
-			while ($data=mysqli_fetch_array($hasil))
+			while ($data=mysqli_fetch_array($execution))
 			{
 				echo "<td class='align-middle text-center'> $data[No] </td>";
 				echo "<td class='text-xs-left'> $data[Nama] </td>";
