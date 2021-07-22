@@ -32,6 +32,7 @@
 	<?php 
 	include ("../headers.php");
 	include ("form_input_anime.php");
+	
 	?>
 
 	<header class="py-3 mb-4 border-bottom">
@@ -63,6 +64,7 @@
 			include ('../koneksi.php');
 			$tampil="SELECT * FROM `list_anime` ";
 			$hasil=mysqli_query($koneksi, $tampil);
+			$Test = "1";
 
 			while ($data=mysqli_fetch_array($hasil))
 			{
@@ -72,9 +74,11 @@
 				echo "<td class='align-middle text-center'> $data[Kategori] </td>";
 				echo "<td class='align-middle text-center' width='85'> $data[Tanggal] </td>";
 				echo "<td class='align-middle'> <p class='overflow'><a href='$data[Link]'> $data[Link] </a></p></td>";
-				echo "<td width='50' class='align-middle text-center'><img src='../resource/Edit.png' alt='Edit' width='30' height='30' data-bs-toggle='modal' data-bs-target='#form_Edit_anime$data[No]'></td>";
-				echo "<td width='50' class='align-middle text-center'><a href='Hapus_Murid.php?kode=$data[No]'> <img src='../resource/Delete.png' alt='Delete' width='30' height='30'> </a></td>
+				echo "<td width='50' class='align-middle text-center'><img src='../resource/Edit.png' alt='Edit' width='30' height='30' data-bs-toggle='modal' data-bs-target='#form_Edit_anime$data[No]' $Test = '1';></td>";
+				echo "<td width='50' class='align-middle text-center'><a href='proses_hapus_anime.php?No=$data[No]'> <img src='../resource/Delete.png' alt='Delete' width='30' height='30'> </a></td>
 			</TR>";
+			
+			include ("form_edit_anime.php");
 			}
 					
 			?>
