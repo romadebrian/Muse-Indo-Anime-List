@@ -1,8 +1,7 @@
 <?php
-//session_start();
  
-if(!isset($_SESSION['admin']))
+if(!isset($_SESSION['username']))
 {
-	echo '<script language="javascript">alert("Anda harus Login!"); document.location="../index.php";</script>';
+	echo '<script language="javascript">alert("Anda harus Login!"); document.location="../login.php";</script>';
 }
 ?>

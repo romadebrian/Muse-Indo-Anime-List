@@ -1,23 +1,29 @@
-body
-{
-    background-image: url("resource/BG.png");
-    background-repeat: no-repeat;
-    background-color: #ffffff;
-    background-size: auto;
+body {
+  background-image: url("resource/BG.png");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-size: auto;
 }
 
 #footer {
-    background-image: url("resource/footer.png");
-	background-color: #ffffff;
-	background-repeat: no-repeat;
-    background-size: cover;
-    height: 160px;
+  background-image: url("resource/footer.png");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 160px;
 }
 
 .overflow {
-  white-space: nowrap; 
-  width: 150px; 
+  white-space: nowrap;
+  width: 150px;
   overflow: hidden;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
   direction: rtl;
+}
+
+.judul-anime {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0px;
+  margin: 205px 0 0 0;
+  overflow: hidden;
 }
